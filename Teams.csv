@@ -1,0 +1,97 @@
+team_id,league_id,team_name,team_stadium,team_manager
+1,1,Arsenal,Emirates Stadium,Mikel Arteta
+2,1,Aston Villa,Villa Park,Unai Emery
+3,1,Bournemouth,Dean Park,Andoni Iraola
+4,1,Brentford,Brentford Community Stadium,Thomas Frank
+5,1,Brighton & Hove Albion,Falmer Stadium,Roberto De zerbi
+6,1,Burnley,Turf Moor,Vincent Kompany
+7,1,Chelsea,Stamford Bridge,Mauricio Pochettino
+8,1,Crystal Palace,Selhurst Park,Oliver Glasner
+9,1,Everton,Goodison Park,Sean Dyche
+10,1,Fulham,Craven Cottage,Marco Silva
+11,1,Liverpool,Anfield,Jurgen Klopp
+12,1,Luton Town,Kenilworth Road,Rob Edwards
+13,1,Manchester City,City of Manchester Stadium,Pep Guardiola
+14,1,Manchester United,Old Trafford,Erik ten Hag
+15,1,Newcastle United,St. James' Park,Eddie Howe
+16,1,Nottingham Forest,City Ground,Nuno Espirito Santo
+17,1,Sheffeild United,Bramall Lane,Chris Wilder
+18,1,Tottenham Hotspurs,Tottenham Hotspurs Stadium,Ange Postecoglou
+19,1,West Ham United,London Stadium,David Moyes
+20,1,Wolverhampton Wanderers,Molineux Stadium,Gary O'Neil
+21,2,Alaves,Mendizorroza,Luis Garcia
+22,2,Almeria,Power Horse Stadium,Pepe Mel
+23,2,Athletic Bibao,San Mames,Ernesto Valverde
+24,2,Atletico Madrid,Civitas Metropolitano,Diego Simeone
+25,2,Barcelona,Estadi Olimpic Lluis Companys,Xavi
+26,2,Cadiz,Nuevo Mirandilla,Mauricio Pellegrino
+27,2,Celta Viga,ABANCA Balaidos,Claudio Giraldez
+28,2,Getafe,Coliseum,Jose Bordalas
+29,2,Girona,Montilivi,Michel
+30,2,Granada,Nuevo Los Carmenes,Jose Ramon Sandoval
+31,2,Las Palmas,Gran Canaria,Garcia Pimienta
+32,2,Mallorca,Mallorca Son Moix,Javier Aguirre
+33,2,Osasuna,El Sadar,Jagoba Arrasate 
+34,2,Rayo Vallecano,Vallecas,Inigo Perez
+35,2,Real Betis,Benito Villamarin,Manuel Pellegrini
+36,2,Real Madrid,Santiago Bernabeu,Carlo Ancelotti
+37,2,Real Sociedad,Reale Arena,Imanol Alguacil
+38,2,Sevilla,Ramon Sanchez-Pizjuan,Quique Sanchez Flores
+39,2,Valencia,Mestalla,Ruben Baraja
+40,2,Villarreal,Estadio de la Ceramica,Marcelino
+41,3,FC Augsburg,WWK Arena,Jess Throup
+42,3,Bayer Leverkusen,BayArena,Xabi Alonso
+43,3,FC Bayern Munich,Allianz Arena,Thomas Tuchel
+44,3,Vfl Bochum,Vonovia Ruhrstadion,Heiko Butscher
+45,3,Borussia Dortmund,Signal Iduna Park,Edin Terzic
+46,3,Borussia Monchengladbach,Borussia-Park,Gerardo Seoane
+47,3,Darmstadt 98,MErck-Stadion am Bollenfalltor,Torsten Lieberknecht
+48,3,Eintracht Frankfurt,Deutsche Bank Park,Dinno Toppmoller
+49,3,SC Freiburg,Europa-Park Stadion,Christian Streich
+50,3,FC Heidenheim,Voith-Arena,Frank Schmidt
+51,3,TSG Hoffenheim,PreZero Arena,Pellegrino Matarazzo
+52,3,FC Koln,RheinEnergieStadion,Timo Schultz
+53,3,Mainz 05,Mewa Arena,Bo Henriksen
+54,3,RB Leipzig,Red Bull Arena,Marco Rose
+55,3,VfB Stuttgart,MHPArena,Sebastian HoeneB
+56,3,Union Berlin,Stadion An der Alten Forsterei,Marco Grote
+57,3,Werder Bremen,Wohninvest Weserstadion,Ole Werner
+58,3,VfL Wolfsburg,Volkswagen Arena,Ralph Hasenhuttl
+59,4,Atalanta,Gewiss Stadium,Gian Piero Gasperini
+60,4,Bologna,Satdio Renato DallAra,Thiago Motta
+61,4,Cagliari,Stadio Unipol Domus,Claudio Ranieri
+62,4,Empoli,Stadio Carlo Castellani,Davide Nicola
+63,4,Fiorentina,Stadio Artemio Franchi,Vincenzo Italiano
+64,4,Frosionone,Stadio Benito Stripe,Eusebio Di Francesco
+65,4,Genoa,Stadio Luigi Ferraris,Alberto Gilardino
+66,4,Hellas Verona,Stadio Marcantonio Bentegodi,Marco Baroni
+67,4,Inter Milan,Stadio Giuseppe Meazza,Simone Inzaghi
+68,4,Juventus,Allianz Stadium Juventus,Paolo Montero
+69,4,Lazio,Stadio Olimpico,Igor Tudor
+70,4,Lecce,Stadio Comunale Ettore Giardiniero,Luca Gotti
+71,4,AC Milan,San Siro Stadium,Stefano Pioli
+72,4,Monza,U-Power Stadium,Raffaele Palladino
+73,4,Napoli,Stadio Diego Armando Maradona,Francesco Calzona
+74,4,Roma,Stadio Olimpico,Daniele De Rossi
+75,4,Salernitana,Satdio Arechi,Stefano Colantuono
+76,4,Sassuolo,Mapei Stadium,Davide Ballardini
+77,4,Torino,Stadio Olimpico Grande Torino,Ivan Juric
+78,4,Udinese,Bluenergy Stadium,Fabio Cannavaro
+79,5,Brest,Stade Francis-le Ble,Eric Roy
+80,5,Clermont,Stade Gabriel Montpied,Pascal Gastien
+81,5,Le Havre,Stade Oceane,Luka Elsner
+82,5,Lens,Stade Bollaert-Delelis,Franck Haise
+83,5,Lille ,Decathlon Areana Pierre Mauroy Stadium,Paulo Fonseca
+84,5,Lorient,Stade du Moustoir,Regis Le Bris
+85,5,Lyon,Groupama Stadium,Pierre Sage
+86,5,Marseille,Orange Velodrome,Jean-Lois Gasset
+87,5,Metz,Stade Saint Symphorien,Laszlo Boloni
+88,5,Monaco,Stade Louis II,Adi Hutter
+89,5,Montpellier,Stade de La Mosson,Michel Der Zakarian
+90,5,Nantes,Stade de la Beaujoire,Antoine Kombouare
+91,5,Nice,Allianz Riviera,Francesco Farioli
+92,5,Paris Saint-Germain,Parc des Princes,Luis Enrique
+93,5,Reims,Stade Auguste Delaune,Samba Diawara
+94,5,Rennes,Roazhon Park,Julien Stephan
+95,5,Strasbourg,Stade de la Meinau,Patrick Vieira
+96,5,Toulouse,Stadium Municipal,Carles Martinez Novell
