@@ -25,7 +25,7 @@ def match():
 
     ############################## First Half ##############################
     
-    print("\nAnd We are under way")
+    print("\nAnd We are under way\n")
     
     while start_time < 45:
         
@@ -80,7 +80,7 @@ def match():
 
     ######################################## Second Half ########################################
 
-    print("\nAnd We are under way")
+    print("\nAnd We are under way in the second half\n")
     
     while start_time < 90:
         
@@ -140,42 +140,32 @@ def opposition_team_select():
     global opposition_team
     global opposition_stadium
     
-    print('\n') 
-    
-    for k,v in leagues_dict.items():
-        print(f"[{k}] {v}")
-    
-    number_ol = int(input("Choose your League: "))
-    
-    if number_ol in leagues_dict:
-         
-        try:
-            team_df = teams_data[teams_data['league_id'] == number_ol]
-            
-            teams_dict = {i+1:team for i, team in enumerate(team_df['team_name'])}
-            stadium_dict = {i+1:team for i, team in enumerate(team_df['team_stadium'])}
-            for k,v in teams_dict.items():
-                print(f"[{k}] {v}")
+    while True:
+        print('\n#### Team Options ####')
+        team_df = teams_data[teams_data['league_id'] == number_ol]
                 
-            number_ot = int(input("\nSelect your team: "))
+        teams_dict = {i+1:team for i, team in enumerate(team_df['team_name'])}
+        stadium_dict = {i+1:team for i, team in enumerate(team_df['team_stadium'])}
+                
+        for k,v in teams_dict.items():
+            print(f"[{k}] {v}")
+                    
+        number_ot = int(input("\nSelect oppositions team or Press 0 to go back: "))
         
-            if number_ot in teams_dict.keys():
-                opposition_team = teams_dict[number_ot]
-                opposition_stadium = stadium_dict[number_ot]
-                print(f"\nYou selected {opposition_team}")
-                time.sleep(2)
-            else:
-                print("\nError Please input number mentioned on the left of the team you want to choice")
-                time.sleep(2)
-                opposition_team_select()   
-                
-        except ValueError:
-            print("\nPlease enter a valid number for the league")
-            opposition_team_select()
-    
-    else:
-        print("\nError please input a valid league id ")
-        opposition_team_select()   
+        if number_ot in teams_dict.keys():
+            opposition_team = teams_dict[number_ot]
+            opposition_stadium = stadium_dict[number_ot]
+            print(f"\nYou selected {opposition_team}")
+            time.sleep(2)
+            break
+        
+        elif number_ot == 0:
+            opposition_league_select()
+            break
+        
+        else:
+            print("\nError Please input number mentioned on the left of the team you want to choice")
+            time.sleep(2)
     
 
 def player_team_select():
@@ -183,45 +173,34 @@ def player_team_select():
     global player_team
     global player_stadium
     
-    print("\n")
-    
-    for k,v in leagues_dict.items():
-        print(f"[{k}] {v}")
-    
-    number_pl = int(input("Choose your League: "))
-    
-    if number_pl in leagues_dict:
-         
-        try:
-            team_df = teams_data[teams_data['league_id'] == number_pl]
-            
-            teams_dict = {i+1:team for i, team in enumerate(team_df['team_name'])}
-            stadium_dict = {i+1:team for i, team in enumerate(team_df['team_stadium'])}
-            
-            for k,v in teams_dict.items():
-                print(f"[{k}] {v}")
+    while True:
+        print('\n#### Team Options ####')
+        team_df = teams_data[teams_data['league_id'] == number_pl]
                 
-            number_pt = int(input("\nSelect your team: "))
-        
-            if number_pt in teams_dict.keys():
-                player_team = teams_dict[number_pt]
-                player_stadium = stadium_dict[number_pt]
-                print(f"\nYou selected {player_team}")
-                time.sleep(2)
-            else:
-                print("\nError Please input number mentioned on the left of the team you want to choice")
-                time.sleep(2)
-                player_team_select()   
+        teams_dict = {i+1:team for i, team in enumerate(team_df['team_name'])}
+        stadium_dict = {i+1:team for i, team in enumerate(team_df['team_stadium'])}
                 
-        except ValueError:
-            print("\nPlease enter a valid number for the league")
-            player_team_select()
-    
-    else:
-        print("\nError please input a valid league id ")
-        player_team_select()    
+        for k,v in teams_dict.items():
+            print(f"[{k}] {v}")
+                    
+        number_pt = int(input("\nSelect your team or Press 0 to go back: "))
         
+        if number_pt in teams_dict.keys():
+            player_team = teams_dict[number_pt]
+            player_stadium = stadium_dict[number_pt]
+            print(f"\nYou selected {player_team}")
+            time.sleep(2)
+            break
         
+        elif number_pt == 0:
+            player_league_select()
+            break
+        
+        else:
+            print("\nError Please input number mentioned on the left of the team you want to choice")
+            time.sleep(2)
+          
+          
 def post_result_selection():
     prs = input("\nOptions\n[1] Restart Match\n[2] Restart Match with new teams\n[3] Quit to Main Menu\nWhat do you choose: ")
     print("\n")
@@ -243,9 +222,52 @@ def post_result_selection():
         post_result_selection()
     
     
+def player_league_select():
+    
+    global number_pl
+    
+    print("\n#### League Options ####")
+    
+    for k,v in leagues_dict.items():
+        print(f"[{k}] {v}")
+    
+    number_pl = int(input("Choose your League or Press 0 to go back: "))
+    
+    if number_pl in leagues_dict:
+        player_team_select()
+    
+    elif number_pl == 0:
+        main_menu()    
+    else:
+        print("\nError please input a valid league id ")
+        player_league_select() 
+    
+    
+def opposition_league_select():
+    
+    global number_ol
+    
+    print("\n#### League Options ####")
+    
+    for k,v in leagues_dict.items():
+        print(f"[{k}] {v}")
+    
+    number_ol = int(input("Choose oppositions League or Press 0 to go back: "))
+    
+    if number_ol in leagues_dict:
+        opposition_team_select()
+    
+    elif number_ol == 0:
+        player_team_select()
+        
+    else:
+        print("\nError please input a valid league id ")
+        opposition_league_select() 
+
+
 def main():
-    player_team_select()
-    opposition_team_select()
+    player_league_select()
+    opposition_league_select()
     match()  
     result()
     post_result_selection()
@@ -253,7 +275,7 @@ def main():
     
 def main_menu():
     
-    print("Welcome to Soccer World\n[1] Start Game\n[2] Quit Game")
+    print("\nWelcome to Soccer World\n\n[1] Start Game\n[2] Quit Game")
 
     input_mm = input()
     if input_mm == '1':
