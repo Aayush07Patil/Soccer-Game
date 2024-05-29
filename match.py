@@ -39,8 +39,20 @@ def match():
     
     while start_time < 45:
         
+        mid_dif = (player_midfield - opposition_midfield)/100 
+
+        weight_a = 0.5 + mid_dif
+        weight_b = 0.5 - mid_dif
+        weights_pc_pot = [weight_a,weight_b]
+        weights_pc_ppt = [weight_b,weight_a]
+        
         time.sleep(1)
-        possesion_change = random.choice([True,False])
+        
+        if possesion == player_team:
+            possesion_change = random.choices([True,False],weights_pc_ppt,k=1)[0]
+        else:
+            possesion_change = random.choices([True,False],weights_pc_pot,k=1)[0]
+            
         goal_status = random.choices([True,False],weights=(5,95))
             
             
@@ -90,8 +102,20 @@ def match():
     
     while start_time < 45 + first_half_added_time:
         
+        mid_dif = (player_midfield - opposition_midfield)/100 
+
+        weight_a = 0.5 + mid_dif
+        weight_b = 0.5 - mid_dif
+        weights_pc_pot = [weight_a,weight_b]
+        weights_pc_ppt = [weight_b,weight_a]
+        
         time.sleep(1)
-        possesion_change = random.choice([True,False])
+        
+        if possesion == player_team:
+            possesion_change = random.choices([True,False],weights_pc_ppt,k=1)[0]
+        else:
+            possesion_change = random.choices([True,False],weights_pc_pot,k=1)[0]
+            
         goal_status = random.choices([True,False],weights=(5,95))
             
             
@@ -118,8 +142,8 @@ def match():
         else:
             pass
         
-        print(f"{player_team} : {player_score}")
-        print(f"{opposition_team} : {opposition_score}")
+        print(f"{player_team_abbv} : {player_score}")
+        print(f"{opposition_team_abbv} : {opposition_score}")
         
         if possesion_change == True:
             print(f"{possesion} wins the ball")
@@ -147,8 +171,20 @@ def match():
     
     while start_time < 90:
         
+        mid_dif = (player_midfield - opposition_midfield)/100 
+
+        weight_a = 0.5 + mid_dif
+        weight_b = 0.5 - mid_dif
+        weights_pc_pot = [weight_a,weight_b]
+        weights_pc_ppt = [weight_b,weight_a]
+        
         time.sleep(1)
-        possesion_change = random.choice([True,False])
+        
+        if possesion == player_team:
+            possesion_change = random.choices([True,False],weights_pc_ppt,k=1)[0]
+        else:
+            possesion_change = random.choices([True,False],weights_pc_pot,k=1)[0]
+            
         goal_status = random.choices([True,False],weights=(5,95))
             
             
@@ -171,8 +207,8 @@ def match():
         else:
             pass
         
-        print(f"{player_team} : {player_score}")
-        print(f"{opposition_team} : {opposition_score}")
+        print(f"{player_team_abbv} : {player_score}")
+        print(f"{opposition_team_abbv} : {opposition_score}")
         
         if possesion_change == True:
             print(f"{possesion} wins the ball")
@@ -190,8 +226,19 @@ def match():
     
     while start_time < 90 + second_half_added_time:
         
+        mid_dif = (player_midfield - opposition_midfield)/100 
+
+        weight_a = 0.5 + mid_dif
+        weight_b = 0.5 - mid_dif
+        weights_pc_pot = [weight_a,weight_b]
+        weights_pc_ppt = [weight_b,weight_a]
+        
         time.sleep(1)
-        possesion_change = random.choice([True,False])
+        
+        if possesion == player_team:
+            possesion_change = random.choices([True,False],weights_pc_ppt,k=1)[0]
+        else:
+            possesion_change = random.choices([True,False],weights_pc_pot,k=1)[0]
         goal_status = random.choices([True,False],weights=(5,95))
             
             
@@ -218,8 +265,8 @@ def match():
         else:
             pass
         
-        print(f"{player_team} : {player_score}")
-        print(f"{opposition_team} : {opposition_score}")
+        print(f"{player_team_abbv} : {player_score}")
+        print(f"{opposition_team_abbv} : {opposition_score}")
         
         if possesion_change == True:
             print(f"{possesion} wins the ball")
@@ -244,9 +291,6 @@ def extra_time():
     global player_score
     global opposition_score
     
-    #player_team = "Chelsea"
-    #opposition_team = "Arsenal"
-    
     print(f"\n90 minutes couldn't seperate the teams. So we will go to extra time")
     start_time = 90
     possesion = random.choice([player_team,opposition_team])
@@ -259,8 +303,20 @@ def extra_time():
     
     while start_time < 105:
         
+        mid_dif = (player_midfield - opposition_midfield)/100 
+
+        weight_a = 0.5 + mid_dif
+        weight_b = 0.5 - mid_dif
+        weights_pc_pot = [weight_a,weight_b]
+        weights_pc_ppt = [weight_b,weight_a]
+        
         time.sleep(1)
-        possesion_change = random.choice([True,False])
+        
+        if possesion == player_team:
+            possesion_change = random.choices([True,False],weights_pc_ppt,k=1)[0]
+        else:
+            possesion_change = random.choices([True,False],weights_pc_pot,k=1)[0]
+            
         goal_status = random.choices([True,False],weights=(5,95))
             
             
@@ -287,8 +343,8 @@ def extra_time():
         else:
             pass
         
-        print(f"{player_team} : {player_score}")
-        print(f"{opposition_team} : {opposition_score}")
+        print(f"{player_team_abbv} : {player_score}")
+        print(f"{opposition_team_abbv} : {opposition_score}")
         
         if possesion_change == True:
             print(f"{possesion} wins the ball")
@@ -310,8 +366,20 @@ def extra_time():
     
     while start_time < 105 + first_half_extra_time:
         
+        mid_dif = (player_midfield - opposition_midfield)/100 
+
+        weight_a = 0.5 + mid_dif
+        weight_b = 0.5 - mid_dif
+        weights_pc_pot = [weight_a,weight_b]
+        weights_pc_ppt = [weight_b,weight_a]
+        
         time.sleep(1)
-        possesion_change = random.choice([True,False])
+        
+        if possesion == player_team:
+            possesion_change = random.choices([True,False],weights_pc_ppt,k=1)[0]
+        else:
+            possesion_change = random.choices([True,False],weights_pc_pot,k=1)[0]
+            
         goal_status = random.choices([True,False],weights=(5,95))
             
             
@@ -338,8 +406,8 @@ def extra_time():
         else:
             pass
         
-        print(f"{player_team} : {player_score}")
-        print(f"{opposition_team} : {opposition_score}")
+        print(f"{player_team_abbv} : {player_score}")
+        print(f"{opposition_team_abbv} : {opposition_score}")
         
         if possesion_change == True:
             print(f"{possesion} wins the ball")
@@ -367,8 +435,20 @@ def extra_time():
     
     while start_time < 120:
         
+        mid_dif = (player_midfield - opposition_midfield)/100 
+
+        weight_a = 0.5 + mid_dif
+        weight_b = 0.5 - mid_dif
+        weights_pc_pot = [weight_a,weight_b]
+        weights_pc_ppt = [weight_b,weight_a]
+        
         time.sleep(1)
-        possesion_change = random.choice([True,False])
+        
+        if possesion == player_team:
+            possesion_change = random.choices([True,False],weights_pc_ppt,k=1)[0]
+        else:
+            possesion_change = random.choices([True,False],weights_pc_pot,k=1)[0]
+            
         goal_status = random.choices([True,False],weights=(5,95))
             
             
@@ -391,8 +471,8 @@ def extra_time():
         else:
             pass
         
-        print(f"{player_team} : {player_score}")
-        print(f"{opposition_team} : {opposition_score}")
+        print(f"{player_team_abbv} : {player_score}")
+        print(f"{opposition_team_abbv} : {opposition_score}")
         
         if possesion_change == True:
             print(f"{possesion} wins the ball")
@@ -410,8 +490,20 @@ def extra_time():
     
     while start_time < 120 + second_half_extra_time:
         
+        mid_dif = (player_midfield - opposition_midfield)/100 
+
+        weight_a = 0.5 + mid_dif
+        weight_b = 0.5 - mid_dif
+        weights_pc_pot = [weight_a,weight_b]
+        weights_pc_ppt = [weight_b,weight_a]
+        
         time.sleep(1)
-        possesion_change = random.choice([True,False])
+        
+        if possesion == player_team:
+            possesion_change = random.choices([True,False],weights_pc_ppt,k=1)[0]
+        else:
+            possesion_change = random.choices([True,False],weights_pc_pot,k=1)[0]
+            
         goal_status = random.choices([True,False],weights=(5,95))
             
             
@@ -438,8 +530,8 @@ def extra_time():
         else:
             pass
         
-        print(f"{player_team} : {player_score}")
-        print(f"{opposition_team} : {opposition_score}")
+        print(f"{player_team_abbv} : {player_score}")
+        print(f"{opposition_team_abbv} : {opposition_score}")
         
         if possesion_change == True:
             print(f"{possesion} wins the ball")

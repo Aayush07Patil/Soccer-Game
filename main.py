@@ -1,6 +1,5 @@
 import team_selection
 import match
-import time
 
 def main_menu():
     
