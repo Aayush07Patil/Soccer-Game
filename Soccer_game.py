@@ -60,8 +60,8 @@ def match():
         else:
             pass
         
-        print(f"{player_team} : {player_score}")
-        print(f"{opposition_team} : {opposition_score}")
+        print(f"{player_team_abbv} : {player_score}")
+        print(f"{opposition_team_abbv} : {opposition_score}")
         
         if possesion_change == True:
             print(f"{possesion} wins the ball")
@@ -111,8 +111,8 @@ def match():
         else:
             pass
         
-        print(f"{player_team} : {player_score}")
-        print(f"{opposition_team} : {opposition_score}")
+        print(f"{player_team_abbv} : {player_score}")
+        print(f"{opposition_team_abbv} : {opposition_score}")
         
         if possesion_change == True:
             print(f"{possesion} wins the ball")
@@ -164,8 +164,8 @@ def match():
         else:
             pass
         
-        print(f"{player_team} : {player_score}")
-        print(f"{opposition_team} : {opposition_score}")
+        print(f"{player_team_abbv} : {player_score}")
+        print(f"{opposition_team_abbv} : {opposition_score}")
         
         if possesion_change == True:
             print(f"{possesion} wins the ball")
@@ -211,8 +211,8 @@ def match():
         else:
             pass
         
-        print(f"{player_team} : {player_score}")
-        print(f"{opposition_team} : {opposition_score}")
+        print(f"{player_team_abbv} : {player_score}")
+        print(f"{opposition_team_abbv} : {opposition_score}")
         
         if possesion_change == True:
             print(f"{possesion} wins the ball")
@@ -294,8 +294,8 @@ def extra_time():
         else:
             pass
         
-        print(f"{player_team} : {player_score}")
-        print(f"{opposition_team} : {opposition_score}")
+        print(f"{player_team_abbv} : {player_score}")
+        print(f"{opposition_team_abbv} : {opposition_score}")
         
         if possesion_change == True:
             print(f"{possesion} wins the ball")
@@ -345,8 +345,8 @@ def extra_time():
         else:
             pass
         
-        print(f"{player_team} : {player_score}")
-        print(f"{opposition_team} : {opposition_score}")
+        print(f"{player_team_abbv} : {player_score}")
+        print(f"{opposition_team_abbv} : {opposition_score}")
         
         if possesion_change == True:
             print(f"{possesion} wins the ball")
@@ -398,8 +398,8 @@ def extra_time():
         else:
             pass
         
-        print(f"{player_team} : {player_score}")
-        print(f"{opposition_team} : {opposition_score}")
+        print(f"{player_team_abbv} : {player_score}")
+        print(f"{opposition_team_abbv} : {opposition_score}")
         
         if possesion_change == True:
             print(f"{possesion} wins the ball")
@@ -445,8 +445,8 @@ def extra_time():
         else:
             pass
         
-        print(f"{player_team} : {player_score}")
-        print(f"{opposition_team} : {opposition_score}")
+        print(f"{player_team_abbv} : {player_score}")
+        print(f"{opposition_team_abbv} : {opposition_score}")
         
         if possesion_change == True:
             print(f"{possesion} wins the ball")
@@ -549,8 +549,8 @@ def post_draw_selection():
             match()
             result()
         elif pds == '4':
-            player_team_select()
-            opposition_team_select()
+            player_country_select()
+            opposition_country_select()
             match()
             result()
         elif pds == '5':
@@ -574,8 +574,8 @@ def post_draw_selection():
             result()
         elif pds == '3':
             extra_time_status = False
-            player_team_select()
-            opposition_team_select()
+            player_country_select()
+            opposition_country_select()
             match()
             result()
         elif pds == '4':
@@ -584,47 +584,37 @@ def post_draw_selection():
         else:
             print('Error Please select a number input from above\n')
             post_draw_selection()
-        
 
-def opposition_team_select():
+
+def post_result_selection():
+    prs = input("\nOptions\n[1] Restart Match\n[2] Restart Match with new teams\n[3] Quit to Main Menu\nWhat do you choose: ")
+    print("\n")
     
-    global opposition_team
-    global opposition_stadium
-    global number_ot
-    
-    while True:
-        print('\n#### Team Options ####')
-        team_df = teams_data[teams_data['league_id'] == number_ol]
-                
-        teams_dict = {i+1:team for i, team in enumerate(team_df['team_name'])}
-        stadium_dict = {i+1:team for i, team in enumerate(team_df['team_stadium'])}
-                
-        for k,v in teams_dict.items():
-            print(f"[{k}] {v}")
-                    
-        input_number_ot = int(input("\nSelect oppositions team or Press 0 to go back: "))
-        
-        if input_number_ot in teams_dict.keys():
-            opposition_team = teams_dict[input_number_ot]
-            opposition_stadium = stadium_dict[input_number_ot]
-            number_ot = team_df.loc[team_df['team_name']== opposition_team,'team_id'].values[0]
-            print(f"\nYou selected {opposition_team}")
-            time.sleep(2)
-            break
-        
-        elif input_number_ot == 0:
-            opposition_league_select()
-            break
-        
-        else:
-            print("\nError Please input number mentioned on the left of the team you want to choice")
-            time.sleep(2)
-    
+    if prs == '1':
+        match()
+        result()
+        post_result_selection()
+    elif prs == '2':
+        player_country_select()
+        opposition_country_select()
+        match()
+        result()
+        post_result_selection()
+    elif prs == '3':
+        main_menu()
+    else:
+        print('Error Please select a number input from above\n')
+        post_result_selection()
+          
 
 def player_team_select():
     
     global player_team
     global player_stadium
+    global player_team_abbv
+    global player_attack
+    global player_midfield
+    global player_defend
     global number_pt
     
     while True:
@@ -633,6 +623,10 @@ def player_team_select():
              
         teams_dict = {i+1:team for i, team in enumerate(team_df['team_name'])}
         stadium_dict = {i+1:team for i, team in enumerate(team_df['team_stadium'])}
+        abbv_dict = {i+1:team for i, team in enumerate(team_df['team_abbv'])}
+        attack_dict = {i+1:team for i, team in enumerate(team_df['attack'])}
+        midfield_dict = {i+1:team for i, team in enumerate(team_df['midfield'])}
+        defend_dict = {i+1:team for i, team in enumerate(team_df['defense'])}
                 
         for k,v in teams_dict.items():
             print(f"[{k}] {v}")
@@ -642,6 +636,10 @@ def player_team_select():
         if input_number_pt in teams_dict.keys():
             player_team = teams_dict[input_number_pt]
             player_stadium = stadium_dict[input_number_pt]
+            player_team_abbv = abbv_dict[input_number_pt]
+            player_attack = attack_dict[input_number_pt]
+            player_midfield = midfield_dict[input_number_pt]
+            player_defend = defend_dict[input_number_pt]
             number_pt = team_df.loc[team_df['team_name']== player_team,'team_id'].values[0]
             print(f"\nYou selected {player_team}")
             time.sleep(2)
@@ -654,27 +652,54 @@ def player_team_select():
         else:
             print("\nError Please input number mentioned on the left of the team you want to choice")
             time.sleep(2)
-          
-          
-def post_result_selection():
-    prs = input("\nOptions\n[1] Restart Match\n[2] Restart Match with new teams\n[3] Quit to Main Menu\nWhat do you choose: ")
-    print("\n")
+
+
+def opposition_team_select():
     
-    if prs == '1':
-        match()
-        result()
-        post_result_selection()
-    elif prs == '2':
-        player_team_select()
-        opposition_team_select()
-        match()
-        result()
-        post_result_selection()
-    elif prs == '3':
-        main_menu()
-    else:
-        print('Error Please select a number input from above\n')
-        post_result_selection()
+    global opposition_team
+    global opposition_stadium
+    global opposition_team_abbv
+    global opposition_attack
+    global opposition_midfield
+    global opposition_defend
+    global number_ot
+    
+    while True:
+        print('\n#### Team Options ####')
+        team_df = teams_data[teams_data['league_id'] == number_ol]
+                
+        teams_dict = {i+1:team for i, team in enumerate(team_df['team_name'])}
+        stadium_dict = {i+1:team for i, team in enumerate(team_df['team_stadium'])}
+        abbv_dict = {i+1:team for i, team in enumerate(team_df['team_abbv'])}
+        attack_dict = {i+1:team for i, team in enumerate(team_df['attack'])}
+        midfield_dict = {i+1:team for i, team in enumerate(team_df['midfield'])}
+        defend_dict = {i+1:team for i, team in enumerate(team_df['defense'])}
+                
+        for k,v in teams_dict.items():
+            print(f"[{k}] {v}")
+                    
+        input_number_ot = int(input("\nSelect oppositions team or Press 0 to go back: "))
+        
+        if input_number_ot in teams_dict.keys():
+            opposition_team = teams_dict[input_number_ot]
+            opposition_stadium = stadium_dict[input_number_ot]
+            opposition_team_abbv = abbv_dict[input_number_ot]
+            opposition_attack = attack_dict[input_number_ot]
+            opposition_midfield = midfield_dict[input_number_ot]
+            opposition_defend = defend_dict[input_number_ot]
+            
+            number_ot = team_df.loc[team_df['team_name']== opposition_team,'team_id'].values[0]
+            print(f"\nYou selected {opposition_team}")
+            time.sleep(2)
+            break
+        
+        elif input_number_ot == 0:
+            opposition_league_select()
+            break
+        
+        else:
+            print("\nError Please input number mentioned on the left of the team you want to choice")
+            time.sleep(2)
     
     
 def player_league_select():
