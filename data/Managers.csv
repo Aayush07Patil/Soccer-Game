@@ -1,0 +1,161 @@
+manager_id,manager_name,manager_nationality,team_id,team_name
+1,Mikel Arteta,Spain,1,Arsenal
+2,Unai Emery,Spain,2,Aston Villa
+3,Andoni Iraola,Spain,3,Bournemouth
+4,Thomas Frank,Denmark,4,Brentford
+5,Roberto De zerbi,Italy,5,Brighton & Hove Albion
+6,Vincent Kompany,Belgium,6,Burnley
+7,Mauricio Pochettino,Argentina,7,Chelsea
+8,Oliver Glasner,Austria,8,Crystal Palace
+9,Sean Dyche,England,9,Everton
+10,Marco Silva,Portugal,10,Fulham
+11,Jurgen Klopp,Germany,11,Liverpool
+12,Rob Edwards,Wales,12,Luton Town
+13,Pep Guardiola,Spain,13,Manchester City
+14,Erik ten Hag,Netherlands,14,Manchester United
+15,Eddie Howe,England,15,Newcastle United
+16,Nuno Espirito Santo,Portugal,16,Nottingham Forest
+17,Chris Wilder,England,17,Sheffeild United
+18,Ange Postecoglou,Australia,18,Tottenham Hotspurs
+19,David Moyes,Scotland,19,West Ham United
+20,Gary O'Neil,England,20,Wolverhampton Wanderers
+21,Luis Garcia,Spain,21,Alaves
+22,Pepe Mel,Spain,22,Almeria
+23,Ernesto Valverde,Spain,23,Athletic Bibao
+24,Diego Simeone,Argentina,24,Atletico Madrid
+25,Xavi,Spain,25,Barcelona
+26,Mauricio Pellegrino,Argentina,26,Cadiz
+27,Claudio Giraldez,Spain,27,Celta Vigo
+28,Jose Bordalas,Spain,28,Getafe
+29,Michel,Spain,29,Girona
+30,Jose Ramon Sandoval,Spain,30,Granada
+31,Garcia Pimienta,Spain,31,Las Palmas
+32,Javier Aguirre,Mexico,32,Mallorca
+33,Jagoba Arrasate ,Spain,33,Osasuna
+34,Inigo Perez,Spain,34,Rayo Vallecano
+35,Manuel Pellegrini,Chile,35,Real Betis
+36,Carlo Ancelotti,Italy,36,Real Madrid
+37,Imanol Alguacil,Spain,37,Real Sociedad
+38,Quique Sanchez Flores,Spain,38,Sevilla
+39,Ruben Baraja,Spain,39,Valencia
+40,Marcelino,Spain,40,Villarreal
+41,Jess Throup,Denmark,41,FC Augsburg
+42,Xabi Alonso,Spain,42,Bayer Leverkusen
+43,Thomas Tuchel,Germany,43,FC Bayern Munich
+44,Heiko Butscher,Germany,44,Vfl Bochum
+45,Edin Terzic,Germany,45,Borussia Dortmund
+46,Gerardo Seoane,Switzerland,46,Borussia Monchengladbach
+47,Torsten Lieberknecht,Germany,47,Darmstadt 98
+48,Dinno Toppmoller,Germany,48,Eintracht Frankfurt
+49,Christian Streich,Germany,49,SC Freiburg
+50,Frank Schmidt,Germany,50,FC Heidenheim
+51,Pellegrino Matarazzo,USA,51,TSG Hoffenheim
+52,Timo Schultz,Germany,52,FC Koln
+53,Bo Henriksen,Denmark,53,Mainz 05
+54,Marco Rose,Germany,54,RB Leipzig
+55,Sebastian HoeneB,Germany,55,VfB Stuttgart
+56,Marco Grote,Germany,56,Union Berlin
+57,Ole Werner,Germany,57,Werder Bremen
+58,Ralph Hasenhuttl,Austria,58,VfL Wolfsburg
+59,Gian Piero Gasperini,Italy,59,Atalanta
+60,Thiago Motta,Italy,60,Bologna
+61,Claudio Ranieri,Italy,61,Cagliari
+62,Davide Nicola,Italy,62,Empoli
+63,Vincenzo Italiano,Italy,63,Fiorentina
+64,Eusebio Di Francesco,Italy,64,Frosionone
+65,Alberto Gilardino,Italy,65,Genoa
+66,Marco Baroni,Italy,66,Hellas Verona
+67,Simone Inzaghi,Italy,67,Inter Milan
+68,Paolo Montero,Uruguay,68,Juventus
+69,Igor Tudor,Croatia,69,Lazio
+70,Luca Gotti,Italy,70,Lecce
+71,Stefano Pioli,Italy,71,AC Milan
+72,Raffaele Palladino,Italy,72,Monza
+73,Francesco Calzona,Italy,73,Napoli
+74,Daniele De Rossi,Italy,74,Roma
+75,Stefano Colantuono,Italy,75,Salernitana
+76,Davide Ballardini,Italy,76,Sassuolo
+77,Ivan Juric,Croatia,77,Torino
+78,Fabio Cannavaro,Italy,78,Udinese
+79,Eric Roy,France,79,Brest
+80,Pascal Gastien,France,80,Clermont
+81,Luka Elsner,Slovenia,81,Le Havre
+82,Franck Haise,France,82,Lens
+83,Paulo Fonseca,Portugal,83,Lille 
+84,Regis Le Bris,France,84,Lorient
+85,Pierre Sage,France,85,Lyon
+86,Jean-Lois Gasset,France,86,Marseille
+87,Laszlo Boloni,Romania,87,Metz
+88,Adi Hutter,Austria,88,Monaco
+89,Michel Der Zakarian,Armenia,89,Montpellier
+90,Antoine Kombouare,France,90,Nantes
+91,Francesco Farioli,Italy,91,Nice
+92,Luis Enrique,Spain,92,Paris Saint-Germain
+93,Samba Diawara,Mali,93,Reims
+94,Julien Stephan,France,94,Rennes
+95,Patrick Vieira,France,95,Strasbourg
+96,Carles Martinez Novell,Spain,96,Toulouse
+97,Tony Mowbray,England,97,Birmingham City
+98,John Eustace,England,98,Blackburn Rovers
+99,Liam Manning,England,99,Bristol City
+100,Erol Bulut,Turkey,100,Cardiff City
+101,Mark Robins,England,101,Coventry City
+102,Andre Breitenreiter,Germany,102,Huddersfield Town
+103,Liam Rosenior,England,103,Hull City
+104,Kieran Mckenna,Northern Ireland,104,Ipswich Town
+105,Daniel Farke,Germany,105,Leeds United
+106,Enzo Maresca,Italy,106,Leicester City
+107,Michael Carrick,England,107,Middlesbrough
+108,Neil Harris,England,108,MIllwall
+109,David Wagner,USA,109,Norwich City
+110,Neil Dewsnip,England,110,Plymouth Argyle
+111,Ryan Lowe,England,111,Preston North End
+112,Marti Cifuentes,Spain,112,Quen Park Rangers
+113,Steve Evans,Scotland,113,Rotherham United
+114,Dany Rohl,Germany,114,Sheffeild Wednesday
+115,Russell Martin,Scotland,115,Southampton
+116,Steven Schumacher,England,116,Stoke City
+117,Mike Dodds,England,117,Sunderland
+118,Luke Williams,England,118,Swansea City
+119,Tom Cleverly,England,119,Watford
+120,Carlos Corberan,Spain,120,West Bromwich Albion
+121,Alberto Gonzalez,Spain,121,Albacete
+122,Mehdi Nafti,Tunisia,122,Alcoron
+123,Jandro Castro,Spain,123,Amorebieta
+124,Ferran Costa,Spain,124,Andorra
+125,Bolo,Spain,125,Burgos
+126,Julian Calero,Spain,126,Cartagena
+127,Joseba Etxeberria,Spain,127,Eibar
+128,Sebastian Beccacce,Argentina,128,Elche
+129,Fernando Estevez,Spain,129,Eldense
+130,Manolo Gonzalez,Spain,130,Espanyol
+131,Antonio Hidalgo,Spain,131,Huesca
+132,Borja Jimenez,Spain,132,Leganes
+133,Felipe Minambres,Spain,133,Levante
+134,Alessio Lisci,Italy,134,Mirandes
+135,Luis Miguel Carrion ,Spain,135,Oviedo
+136,Cristobal Parralo,Spain,136,Racing Ferrol
+137,Jose Alberto Lopez,Spain,137,Racing Santander
+138,Miguel Angel Ramirez,Spain,138,Sporting Gijon
+139,Asier Garitano,Spain,139,Tenerife
+140,Paulo Pezzolano,Uruguay,140,Valladolid
+141,Miguel Alvarez,Spain,141,Villarreal B
+142,Victor Fernandez,Spain,142,Zaragoza
+143,John van't Schip,Netherlands,143,Ajax
+144,Alex Pastoor,Netherlands,144,Almere City
+145,Maarten Martens,Belgium,145,AZ
+146,Marinus Djkhuizen,Netherlands,146,Excelsior
+147,Arne Slot,Netherlands,147,Feyenoord
+148,Dann Buijs,Netherlands,148,Fortuna Sittard 
+149,Rene Hake,Netherlands,149,Go Ahead Eagles
+150,Kees Van Wonderen,Netherlands,150,Heerenveen
+151,Erwin van de Looi,Netherlands,151,Heracles Almelo
+152,Rogier Meijer,Netherlands,152,NEC
+153,Johnny Jansen,Netherlands,153,PEC Zwolle
+154,Peter Bosz,Netherlands,154,PSV Eindhoven
+155,Henk Fraser,Netherlands,155,RKC Wallwijk
+156,Jeroen Rijsdijk,Netherlands,156,Sparta Rotterdam
+157,Joseph Oosting,Netherlands,157,Twente
+158,Ron Jans,Netherlands,158,Utrecht
+159,Edward Sturing,Netherlands,159,Vitesse
+160,Regillio Simons,Netherlands,160,Volendam

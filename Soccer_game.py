@@ -5,8 +5,10 @@ import pandas as pd
 country_data = pd.read_csv('data/Country.csv')
 leagues_data = pd.read_csv('data/Leagues.csv')
 teams_data = pd.read_csv('data/Teams.csv')
+managers_data = pd.read_csv('data/Managers.csv')
 
 country_dict = country_data.set_index('country_id')['country_name'].to_dict()
+
 
 def match():
     

@@ -1,121 +1,161 @@
-team_id,league_id,team_name,team_stadium,team_manager,team_abbv
-1,1,Arsenal,Emirates Stadium,Mikel Arteta,ARS
-2,1,Aston Villa,Villa Park,Unai Emery,ASV
-3,1,Bournemouth,Dean Park,Andoni Iraola,BOU
-4,1,Brentford,Brentford Community Stadium,Thomas Frank,BRE
-5,1,Brighton & Hove Albion,Falmer Stadium,Roberto De zerbi,BHA
-6,1,Burnley,Turf Moor,Vincent Kompany,BUR
-7,1,Chelsea,Stamford Bridge,Mauricio Pochettino,CHE
-8,1,Crystal Palace,Selhurst Park,Oliver Glasner,CRY
-9,1,Everton,Goodison Park,Sean Dyche,EVE
-10,1,Fulham,Craven Cottage,Marco Silva,FUL
-11,1,Liverpool,Anfield,Jurgen Klopp,LIV
-12,1,Luton Town,Kenilworth Road,Rob Edwards,LUT
-13,1,Manchester City,City of Manchester Stadium,Pep Guardiola,MC
-14,1,Manchester United,Old Trafford,Erik ten Hag,MU
-15,1,Newcastle United,St. James' Park,Eddie Howe,NEW
-16,1,Nottingham Forest,City Ground,Nuno Espirito Santo,NOF
-17,1,Sheffeild United,Bramall Lane,Chris Wilder,SHU
-18,1,Tottenham Hotspurs,Tottenham Hotspurs Stadium,Ange Postecoglou,TOT
-19,1,West Ham United,London Stadium,David Moyes,WHU
-20,1,Wolverhampton Wanderers,Molineux Stadium,Gary O'Neil,WOL
-21,2,Alaves,Mendizorroza,Luis Garcia,ALA
-22,2,Almeria,Power Horse Stadium,Pepe Mel,ALM
-23,2,Athletic Bibao,San Mames,Ernesto Valverde,BIL
-24,2,Atletico Madrid,Civitas Metropolitano,Diego Simeone,AM
-25,2,Barcelona,Estadi Olimpic Lluis Companys,Xavi,FCB
-26,2,Cadiz,Nuevo Mirandilla,Mauricio Pellegrino,CAD
-27,2,Celta Vigo,ABANCA Balaidos,Claudio Giraldez,VIG
-28,2,Getafe,Coliseum,Jose Bordalas,GET
-29,2,Girona,Montilivi,Michel,GIR
-30,2,Granada,Nuevo Los Carmenes,Jose Ramon Sandoval,GRA
-31,2,Las Palmas,Gran Canaria,Garcia Pimienta,LPM
-32,2,Mallorca,Mallorca Son Moix,Javier Aguirre,MAL
-33,2,Osasuna,El Sadar,Jagoba Arrasate ,OSA
-34,2,Rayo Vallecano,Vallecas,Inigo Perez,RVA
-35,2,Real Betis,Benito Villamarin,Manuel Pellegrini,RB
-36,2,Real Madrid,Santiago Bernabeu,Carlo Ancelotti,RM
-37,2,Real Sociedad,Reale Arena,Imanol Alguacil,SOC
-38,2,Sevilla,Ramon Sanchez-Pizjuan,Quique Sanchez Flores,SEV
-39,2,Valencia,Mestalla,Ruben Baraja,VAL
-40,2,Villarreal,Estadio de la Ceramica,Marcelino,VIL
-41,3,FC Augsburg,WWK Arena,Jess Throup,AUG
-42,3,Bayer Leverkusen,BayArena,Xabi Alonso,BL
-43,3,FC Bayern Munich,Allianz Arena,Thomas Tuchel,FCB
-44,3,Vfl Bochum,Vonovia Ruhrstadion,Heiko Butscher,BOC
-45,3,Borussia Dortmund,Signal Iduna Park,Edin Terzic,DOR
-46,3,Borussia Monchengladbach,Borussia-Park,Gerardo Seoane,MON
-47,3,Darmstadt 98,MErck-Stadion am Bollenfalltor,Torsten Lieberknecht,DAR
-48,3,Eintracht Frankfurt,Deutsche Bank Park,Dinno Toppmoller,FRA
-49,3,SC Freiburg,Europa-Park Stadion,Christian Streich,FRE
-50,3,FC Heidenheim,Voith-Arena,Frank Schmidt,HED
-51,3,TSG Hoffenheim,PreZero Arena,Pellegrino Matarazzo,HOF
-52,3,FC Koln,RheinEnergieStadion,Timo Schultz,KOL
-53,3,Mainz 05,Mewa Arena,Bo Henriksen,M05
-54,3,RB Leipzig,Red Bull Arena,Marco Rose,RBL
-55,3,VfB Stuttgart,MHPArena,Sebastian HoeneB,STU
-56,3,Union Berlin,Stadion An der Alten Forsterei,Marco Grote,UB
-57,3,Werder Bremen,Wohninvest Weserstadion,Ole Werner,WB
-58,3,VfL Wolfsburg,Volkswagen Arena,Ralph Hasenhuttl,WOL
-59,4,Atalanta,Gewiss Stadium,Gian Piero Gasperini,ATA
-60,4,Bologna,Satdio Renato DallAra,Thiago Motta,BOL
-61,4,Cagliari,Stadio Unipol Domus,Claudio Ranieri,CAG
-62,4,Empoli,Stadio Carlo Castellani,Davide Nicola,EMP
-63,4,Fiorentina,Stadio Artemio Franchi,Vincenzo Italiano,FIO
-64,4,Frosionone,Stadio Benito Stripe,Eusebio Di Francesco,FRO
-65,4,Genoa,Stadio Luigi Ferraris,Alberto Gilardino,GEN
-66,4,Hellas Verona,Stadio Marcantonio Bentegodi,Marco Baroni,HV
-67,4,Inter Milan,Stadio Giuseppe Meazza,Simone Inzaghi,INT
-68,4,Juventus,Allianz Stadium Juventus,Paolo Montero,JUV
-69,4,Lazio,Stadio Olimpico,Igor Tudor,LAZ
-70,4,Lecce,Stadio Comunale Ettore Giardiniero,Luca Gotti,LEC
-71,4,AC Milan,San Siro Stadium,Stefano Pioli,ACM
-72,4,Monza,U-Power Stadium,Raffaele Palladino,MON
-73,4,Napoli,Stadio Diego Armando Maradona,Francesco Calzona,NAP
-74,4,Roma,Stadio Olimpico,Daniele De Rossi,ROM
-75,4,Salernitana,Satdio Arechi,Stefano Colantuono,SAL
-76,4,Sassuolo,Mapei Stadium,Davide Ballardini,SAS
-77,4,Torino,Stadio Olimpico Grande Torino,Ivan Juric,TOR
-78,4,Udinese,Bluenergy Stadium,Fabio Cannavaro,UDN
-79,5,Brest,Stade Francis-le Ble,Eric Roy,BRE
-80,5,Clermont,Stade Gabriel Montpied,Pascal Gastien,CLR
-81,5,Le Havre,Stade Oceane,Luka Elsner,LH
-82,5,Lens,Stade Bollaert-Delelis,Franck Haise,LEN
-83,5,Lille ,Decathlon Areana Pierre Mauroy Stadium,Paulo Fonseca,LIL
-84,5,Lorient,Stade du Moustoir,Regis Le Bris,LOR
-85,5,Lyon,Groupama Stadium,Pierre Sage,LYN
-86,5,Marseille,Orange Velodrome,Jean-Lois Gasset,MAR
-87,5,Metz,Stade Saint Symphorien,Laszlo Boloni,MET
-88,5,Monaco,Stade Louis II,Adi Hutter,MON
-89,5,Montpellier,Stade de La Mosson,Michel Der Zakarian,MON
-90,5,Nantes,Stade de la Beaujoire,Antoine Kombouare,NAN
-91,5,Nice,Allianz Riviera,Francesco Farioli,NIC
-92,5,Paris Saint-Germain,Parc des Princes,Luis Enrique,PSG
-93,5,Reims,Stade Auguste Delaune,Samba Diawara,REI
-94,5,Rennes,Roazhon Park,Julien Stephan,REN
-95,5,Strasbourg,Stade de la Meinau,Patrick Vieira,STR
-96,5,Toulouse,Stadium Municipal,Carles Martinez Novell,TOU
-97,6,Birmingham City,St. Andrew's,Tony Mowbray,BIR
-98,6,Blackburn Rovers,Ewood Park,John Eustace,BLA
-99,6,Bristol City,Ashton Gate Stadium,Liam Manning,BRI
-100,6,Cardiff City,Cardiff City Stadium,Erol Bulut,CAR
-101,6,Coventry City,Coventry Building Society Arena,Mark Robins,COV
-102,6,Huddersfield Town,Kirklees Satdium,Andre Breitenreiter,HUD
-103,6,Hull City,MKM Stadium,Liam Rosenior,HUL
-104,6,Ipswich Town,Portman Road,Kieran Mckenna,IPS
-105,6,Leeds United,Elland Road,Daniel Farke,LED
-106,6,Leicester City,King Power Stadium,Enzo Maresca,LEI
-107,6,Middlesbrough,Riverside Stadium,Michael Carrick,MID
-108,6,MIllwall,The Den,Neil Harris,MIL
-109,6,Norwich City,Carrow Road,David Wagner,NOR
-110,6,Plymouth Argyle,Home Park,Neil Dewsnip,PLY
-111,6,Preston North End,Deepdale,Ryan Lowe,PNE
-112,6,Quen Park Rangers,Loftus Road,Marti Cifuentes,QPR
-113,6,Rotherham United,New York Stadium,Steve Evans,ROT
-114,6,Sheffeild Wednesday,Hillsborough Stadium,Dany Rohl,SHE
-115,6,Southampton,St. Mary's Stadium,Russell Martin,SOU
-116,6,Stoke City,bet365 Stadium,Steven Schumacher,STK
-117,6,Sunderland,Stadium of Light,Mike Dodds,SUN
-118,6,Swansea City,Swansea.com Stadium,Luke Williams,SWA
-119,6,Watford,Vicarage Road,Tom Cleverly,WAT
-120,6,West Bromwich Albion,The Hawthorns,Carlos Corberan,WBA
+team_id,league_id,team_name,team_stadium,team_abbv,manager_id,attack,midfield ,defense
+1,1,Arsenal,Emirates Stadium,ARS,1,82,84,81
+2,1,Aston Villa,Villa Park,ASV,2,82,79,79
+3,1,Bournemouth,Dean Park,BOU,3,75,75,74
+4,1,Brentford,Brentford Community Stadium,BRE,4,75,76,76
+5,1,Brighton & Hove Albion,Falmer Stadium,BHA,5,77,77,78
+6,1,Burnley,Turf Moor,BUR,6,69,74,73
+7,1,Chelsea,Stamford Bridge,CHE,7,77,81,78
+8,1,Crystal Palace,Selhurst Park,CRY,8,75,76,76
+9,1,Everton,Goodison Park,EVE,9,79,77,75
+10,1,Fulham,Craven Cottage,FUL,10,76,77,76
+11,1,Liverpool,Anfield,LIV,11,84,82,84
+12,1,Luton Town,Kenilworth Road,LUT,12,72,72,72
+13,1,Manchester City,City of Manchester Stadium,MC,13,87,86,83
+14,1,Manchester United,Old Trafford,MU,14,82,83,80
+15,1,Newcastle United,St. James' Park,NEW,15,79,81,82
+16,1,Nottingham Forest,City Ground,NOF,16,75,77,75
+17,1,Sheffield United,Bramall Lane,SHU,17,72,74,72
+18,1,Tottenham Hotspurs,Tottenham Hotspurs Stadium,TOT,18,81,80,79
+19,1,West Ham United,London Stadium,WHU,19,78,79,78
+20,1,Wolverhampton Wanderers,Molineux Stadium,WOL,20,75,77,76
+21,2,Alaves,Mendizorroza,ALA,21,73,73,73
+22,2,Almeria,Power Horse Stadium,ALM,22,75,74,74
+23,2,Athletic Bibao,San Mames,BIL,23,77,79,77
+24,2,Atletico Madrid,Civitas Metropolitano,AM,24,85,82,81
+25,2,Barcelona,Estadi Olimpic Lluis Companys,FCB,25,84,84,83
+26,2,Cadiz,Nuevo Mirandilla,CAD,26,74,75,73
+27,2,Celta Vigo,ABANCA Balaidos,VIG,27,79,76,75
+28,2,Getafe,Coliseum,GET,28,82,76,75
+29,2,Girona,Montilivi,GIR,29,77,76,76
+30,2,Granada,Nuevo Los Carmenes,GRA,30,76,72,72
+31,2,Las Palmas,Gran Canaria,LPM,31,75,75,72
+32,2,Mallorca,Mallorca Son Moix,MAL,32,77,77,74
+33,2,Osasuna,El Sadar,OSA,33,77,77,77
+34,2,Rayo Vallecano,Vallecas,RVA,34,76,77,77
+35,2,Real Betis,Benito Villamarin,RB,35,83,79,77
+36,2,Real Madrid,Santiago Bernabeu,RM,36,85,85,83
+37,2,Real Sociedad,Reale Arena,SOC,37,79,81,79
+38,2,Sevilla,Ramon Sanchez-Pizjuan,SEV,38,80,79,82
+39,2,Valencia,Mestalla,VAL,39,74,74,76
+40,2,Villarreal,Estadio de la Ceramica,VIL,40,79,80,77
+41,3,FC Augsburg,WWK Arena,AUG,41,72,74,74
+42,3,Bayer 04 Leverkusen,BayArena,BL,42,81,81,79
+43,3,FC Bayern Munich,Allianz Arena,FCB,43,90,84,83
+44,3,Vfl Bochum,Vonovia Ruhrstadion,BOC,44,74,73,73
+45,3,Borussia Dortmund,Signal Iduna Park,DOR,45,81,81,81
+46,3,Borussia Monchengladbach,Borussia-Park,MON,46,75,76,75
+47,3,Darmstadt 98,MErck-Stadion am Bollenfalltor,DAR,47,69,71,71
+48,3,Eintracht Frankfurt,Deutsche Bank Park,FRA,48,76,76,75
+49,3,SC Freiburg,Europa-Park Stadion,FRE,49,76,76,77
+50,3,FC Heidenheim,Voith-Arena,HED,50,72,70,71
+51,3,TSG Hoffenheim,PreZero Arena,HOF,51,77,76,75
+52,3,FC Koln,RheinEnergieStadion,KOL,52,73,74,73
+53,3,Mainz 05,Mewa Arena,M05,53,77,75,74
+54,3,RB Leipzig,Red Bull Arena,RBL,54,82,79,79
+55,3,VfB Stuttgart,MHPArena,STU,55,76,73,73
+56,3,Union Berlin,Stadion An der Alten Forsterei,UB,56,77,75,77
+57,3,Werder Bremen,Wohninvest Weserstadion,WB,57,75,74,74
+58,3,VfL Wolfsburg,Volkswagen Arena,WOL,58,76,78,75
+59,4,Atalanta,Gewiss Stadium,ATA,59,79,77,77
+60,4,Bologna,Satdio Renato DallAra,BOL,60,73,76,73
+61,4,Cagliari,Stadio Unipol Domus,CAG,61,72,72,71
+62,4,Empoli,Stadio Carlo Castellani,EMP,62,74,74,72
+63,4,Fiorentina,Stadio Artemio Franchi,FIO,63,78,77,78
+64,4,Frosionone,Stadio Benito Stripe,FRO,64,70,70,67
+65,4,Genoa,Stadio Luigi Ferraris,GEN,65,76,73,71
+66,4,Hellas Verona,Stadio Marcantonio Bentegodi,HV,66,71,74,74
+67,4,Inter Milan,Stadio Giuseppe Meazza,INT,67,81,82,82
+68,4,Juventus,Allianz Stadium Juventus,JUV,68,81,80,79
+69,4,Lazio,Stadio Olimpico,LAZ,69,81,79,80
+70,4,Lecce,Stadio Comunale Ettore Giardiniero,LEC,70,74,68,72
+71,4,AC Milan,San Siro Stadium,ACM,71,81,79,81
+72,4,Monza,U-Power Stadium,MON,72,75,75,74
+73,4,Napoli,Stadio Diego Armando Maradona,NAP,73,82,82,80
+74,4,Roma,Stadio Olimpico,ROM,74,82,78,81
+75,4,Salernitana,Satdio Arechi,SAL,75,74,73,71
+76,4,Sassuolo,Mapei Stadium,SAS,76,78,73,72
+77,4,Torino,Stadio Olimpico Grande Torino,TOR,77,76,74,76
+78,4,Udinese,Bluenergy Stadium,UDN,78,74,73,74
+79,5,Brest,Stade Francis-le Ble,BRE,79,72,73,72
+80,5,Clermont,Stade Gabriel Montpied,CLR,80,71,72,71
+81,5,Le Havre,Stade Oceane,LH,81,70,70,71
+82,5,Lens,Stade Bollaert-Delelis,LEN,82,77,76,77
+83,5,Lille ,Decathlon Areana Pierre Mauroy Stadium,LIL,83,77,75,75
+84,5,Lorient,Stade du Moustoir,LOR,84,73,73,73
+85,5,Lyon,Groupama Stadium,LYN,85,77,75,76
+86,5,Marseille,Orange Velodrome,MAR,86,77,78,78
+87,5,Metz,Stade Saint Symphorien,MET,87,69,68,71
+88,5,Monaco,Stade Louis II,MON,88,81,77,75
+89,5,Montpellier,Stade de La Mosson,MON,89,68,75,73
+90,5,Nantes,Stade de la Beaujoire,NAN,90,73,73,73
+91,5,Nice,Allianz Riviera,NIC,91,77,76,75
+92,5,Paris Saint-Germain,Parc des Princes,PSG,92,86,79,83
+93,5,Reims,Stade Auguste Delaune,REI,93,69,75,72
+94,5,Rennes,Roazhon Park,REN,94,77,78,74
+95,5,Strasbourg,Stade de la Meinau,STR,95,72,72,72
+96,5,Toulouse,Stadium Municipal,TOU,96,75,71,72
+97,6,Birmingham City,St. Andrew's,BIR,97,69,69,69
+98,6,Blackburn Rovers,Ewood Park,BLA,98,70,69,70
+99,6,Bristol City,Ashton Gate Stadium,BRI,99,67,70,69
+100,6,Cardiff City,Cardiff City Stadium,CAR,100,70,71,68
+101,6,Coventry City,Coventry Building Society Arena,COV,101,71,71,70
+102,6,Huddersfield Town,Kirklees Satdium,HUD,102,68,66,67
+103,6,Hull City,MKM Stadium,HUL,103,69,71,70
+104,6,Ipswich Town,Portman Road,IPS,104,68,69,69
+105,6,Leeds United,Elland Road,LED,105,72,72,72
+106,6,Leicester City,King Power Stadium,LEI,106,73,76,75
+107,6,Middlesbrough,Riverside Stadium,MID,107,69,70,71
+108,6,MIllwall,The Den,MIL,108,72,71,70
+109,6,Norwich City,Carrow Road,NOR,109,70,72,71
+110,6,Plymouth Argyle,Home Park,PLY,110,67,67,67
+111,6,Preston North End,Deepdale,PNE,111,69,70,68
+112,6,Quen Park Rangers,Loftus Road,QPR,112,67,68,69
+113,6,Rotherham United,New York Stadium,ROT,113,67,68,65
+114,6,Sheffield Wednesday,Hillsborough Stadium,SHE,114,68,69,67
+115,6,Southampton,St. Mary's Stadium,SOU,115,71,70,74
+116,6,Stoke City,bet365 Stadium,STK,116,71,70,69
+117,6,Sunderland,Stadium of Light,SUN,117,57,68,69
+118,6,Swansea City,Swansea.com Stadium,SWA,118,70,70,67
+119,6,Watford,Vicarage Road,WAT,119,70,71,69
+120,6,West Bromwich Albion,The Hawthorns,WBA,120,70,72,70
+121,7,Albacete,Estadio Carlos Belmonte,ALB,121,69,69,69
+122,7,Alcoron,Estadio Municipal de Santo Domingo,ALC,122,69,67,67
+123,7,Amorebieta,Insralaciones de Lezma Campo 2,AMO,123,65,66,67
+124,7,Andorra,Estadi Nacional d'Andorra,AND,124,65,67,67
+125,7,Burgos,Estadio Municipal El Plantio,BUR,125,69,70,69
+126,7,Cartagena,Estadio Cartagonova,CAR,126,68,69,70
+127,7,Eibar,Estadio Municipal de Ipurua,EIB,127,71,72,71
+128,7,Elche,Estadio Martinez Valero,ELC,128,73,71,71
+129,7,Eldense,Estadio Municipla Nuevo Pepico Amat,ELD,129,68,66,67
+130,7,Espanyol,Stage Front Stadium,RCD,130,76,74,74
+131,7,Huesca,Estadio El-Alcoraz,HUE,131,68,68,69
+132,7,Leganes,Estadio Municipal Butarque,LEG,132,69,68,69
+133,7,Levante,Estadi Ciutat de Valencia,LEV,133,70,70,71
+134,7,Mirandes,El Estadio Municipal de Anduva,MIR,134,64,66,66
+135,7,Oviedo,Estadio Carlos Tartiere,OVI,135,68,68,65
+136,7,Racing Ferrol,Esatdio Municipal de A Malata,RF,136,67,69,68
+137,7,Racing Santander,Campos de sport de El Sardinero,RS,137,69,71,70
+138,7,Sporting Gijon,Estadio Municipla El Molinon,SG,138,71,72,72
+139,7,Tenerife,Estadio Heliodoro Rodriguez Lopez,TEN,139,70,70,70
+140,7,Valladolid,Estadio Jose Zorrilla,VAL,140,69,69,71
+141,7,Villarreal B,Estadio de la Ceramica,VIL,141,72,70,70
+142,7,Zaragoza,Estadio de La Romareda,ZAR,142,65,66,65
+143,8,Ajax,Johan Cruyff Arena,AJX,143,77,74,73
+144,8,Almere City,Yanmar Stadion,ALM,144,65,65,65
+145,8,AZ Alkmaar,AFAS Stadion,AZ,145,71,73,71
+146,8,Excelsior,Van Donge & De Roo Stadion,EXC,146,65,65,65
+147,8,Feyenoord,De Kuip,FEY,147,76,74,77
+148,8,Fortuna Sittard ,Fortuna Sittard Stadion,FOR,148,67,68,68
+149,8,Go Ahead Eagles,De Adelaarshorst,GAE,149,67,66,67
+150,8,Heerenveen,Abe Lenstra Stadion,HER,150,70,69,68
+151,8,Heracles Almelo,Erve Asito,HA,151,67,66,66
+152,8,NEC,Goffertstadion,NEC,152,70,68,68
+153,8,PEC Zwolle,MAC PARK Stadion,PEC,153,68,66,66
+154,8,PSV Eindhoven,Philips Stadion,PSV,154,78,74,75
+155,8,RKC Wallwijk,Mandemakers Stadion,RKC,155,66,64,67
+156,8,Sparta Rotterdam,Spartastadion Het Kasteel,SR,156,67,68,66
+157,8,Twente,De Grolsch Veste,TWE,157,70,70,73
+158,8,Utrecht,Stadion Galgenwaard,UTR,158,67,70,70
+159,8,Vitesse,GelreDome,VIT,159,67,69,67
+160,8,Volendam,Kras Stadion,VOL,160,64,63,64
