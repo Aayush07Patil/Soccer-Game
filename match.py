@@ -551,66 +551,81 @@ def extra_time():
     start_time = 120    
     print ("\nThats the final Whistle")
 
-def take_penalty():
-    # Simulate a penalty shot with a 70% chance of scoring
-    return random.random() < 0.7
-
 def penalties(team1,team2):
     
-    global palyer_score
-    global opposition_score
+    global team1_score
+    global team2_score
     
-    player_score = 0
-    opposition_score = 0
-    rounds = 5
-    results = {"team1": [], "team2": []}
+    possesion = team1
+    directions = ['TR','BR','M','TL','BL']
+    team1_score = 0
+    team2_score = 0
+    team1_score_list = []
+    team2_score_list = []
+    round = 0
+    
+    while round <= 4:
 
-    for round in range(1, rounds + 1):
-        # Team 1 takes a penalty
-        if take_penalty():
-            player_score += 1
-            results["team1"].append("Goal")
+        if possesion == team1:
+            
+            penalty_take = input('\nWhere will you shoot\nTR\nBR\nM\nTL\nBL\nWhat do you choice: ').upper()
+            keeper_save = random.choice(directions)
+            if penalty_take == keeper_save:
+                print('Saved!!!!')
+                team1_score_list.append('X')
+                
+            else:
+                print(f'{team1} Scores!!!!')
+                team1_score_list.append('O')
+                team1_score += 1
+            possesion = team2
+                
         else:
-            results["team1"].append("Miss")
+            
+            keeper_save = input('\nWhere will you dive\nTR\nBR\nM\nTL\nBL\nWhat do you choice: ').upper()
+            penalty_take = random.choice(directions)
+            if penalty_take == keeper_save:
+                print('\nSaved!!!!')
+                team2_score_list.append('X')
+            else:
+                print(f'\n {team2} Scores!!!!')
+                team2_score_list.append('O')
+                team2_score += 1
+            possesion = team1
+            round += 1
         
-        # Team 2 takes a penalty
-        if take_penalty():
-            opposition_score += 1
-            results["team2"].append("Goal")
+        print(f'{team1} {team1_score_list}')
+        print(f'{team2} {team2_score_list}')
+        
+    while team1_score == team2_score:
+        if possesion == team1:
+            penalty_take = input('\nWhere will you shoot\nTR\nBR\nM\nTL\nBL\nWhat do you choose: ').upper()
+            keeper_save = random.choice(directions)
+            if penalty_take == keeper_save:
+                print('Saved!!!!')
+                team1_score_list.append('X')
+            else:
+                print(f'{team1} Scores!!!!')
+                team1_score_list.append('O')
+                team1_score += 1
+            possesion = team2
         else:
-            results["team2"].append("Miss")
+            keeper_save = input('\nWhere will you dive\nTR\nBR\nM\nTL\nBL\nWhat do you choose: ').upper()
+            penalty_take = random.choice(directions)
+            if penalty_take == keeper_save:
+                print('\nSaved!!!!')
+                team2_score_list.append('X')
+            else:
+                print(f'\n{team2} Scores!!!!')
+                team2_score_list.append('O')
+                team2_score += 1
+            possesion = team1
         
-        print(f"Round {round} - {team1}: {results['team1'][-1]}, {team2}: {results['team2'][-1]}")
-        print(f"Score after round {round}: {team1} {player_score} - {opposition_score} {team2}")
-        time.sleep(2)
+        print(f'{team1} {team1_score_list}')
+        print(f'{team2} {team2_score_list}')
         
-        # Check if one team has already won after 5 rounds
-        if round == rounds:
-            if player_score > opposition_score:
-                result()
-            elif opposition_score > player_score:
-                result()
-
-    # If tied after 5 rounds, go into sudden death
-    print("Tied after 5 rounds. Sudden death!")
-    while player_score == opposition_score:
-        # Team 1 takes a sudden death penalty
-        if take_penalty():
-            player_score += 1
-            results["team1"].append("Goal")
-        else:
-            results["team1"].append("Miss")
-        
-        # Team 2 takes a sudden death penalty
-        if take_penalty():
-            opposition_score += 1
-            results["team2"].append("Goal")
-        else:
-            results["team2"].append("Miss")
-
-        print(f"Sudden Death - {team1}: {results['team1'][-1]}, {team2}: {results['team2'][-1]}")
-        print(f"Score: {team1} {player_score} - {opposition_score} {team2}")
-
+    penalties_result()
+   
 def result():
     
     if player_score == opposition_score:
@@ -623,6 +638,14 @@ def result():
         print(f"{opposition_team} won the match")
         post_result_selection()
 
+def penalties_result():
+        if team1_score > team2_score:
+            print(f"{player_team} won the match")
+            post_result_selection()
+        else:
+            print(f"{opposition_team} won the match")
+            post_result_selection()
+             
 def post_result_selection():
     prs = input("\nOptions\n[1] Restart Match\n[2] Restart Match with new teams\n[3] Quit to Main Menu\nWhat do you choose: ")
     print("\n")
@@ -698,3 +721,4 @@ def post_draw_selection():
         else:
             print('Error Please select a number input from above\n')
             post_draw_selection()
+            
